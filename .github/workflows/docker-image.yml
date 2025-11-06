@@ -30,7 +30,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./Festivalapi-SpringBoot
-          file: ./Festivalapi-SpringBoot/backend.Dockerfile
+          file: ./Festivalapi-SpringBoot/backend.dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ansible-backend:latest
 
