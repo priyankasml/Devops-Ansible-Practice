@@ -39,6 +39,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./festival-api
-          file: ./festival-api/frontend.Dockerfile
+          file: ./festival-api/frontend.dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ansible-frontend:latest
